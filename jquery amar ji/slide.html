@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		.s1{
+			width:500px;
+			height:100px;
+			background-color:red;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="s1"></div>
+	<input type="button" value="slideup"><input type="button" value="slide down"><input type="button" value="slide toggle">
+	<script>
+		$("input:eq(0)").click(function()
+						{
+			$("div").slideUp(1000);
+		})
+		$("input:eq(1)").click(function()
+						{
+			$("div").slideDown(1000);
+		})
+		$("input:eq(2)").click(function()
+						{
+			$("div").slideToggle(1000);
+		})
+	</script>
+	<!--  
+$().();
+-->
+</body>
+</html>

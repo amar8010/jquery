@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		.a1,.a3,.a5,.a7{
+			width:600px;
+			height:100px;
+			background-color:red;
+			border:3px solid green;
+			border-radius:20px;
+		}
+		.a2{
+			width:600px;
+			height:150px;
+			background-color:blue;
+			border:3px solid green;
+			border-radius:20px;
+		}
+		.a4,.a6,.a8{
+			width:600px;
+			height:150px;
+			background-color:blue;
+			display:none;
+			border:3px solid green;
+			border-radius:20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="a1"></div>
+	<div class="a2"></div>
+	<div class="a3"></div>
+	<div class="a4"></div>
+	<div class="a5"></div>
+	<div class="a6"></div>
+	<div class="a7"></div>
+	<div class="a8"></div>
+	<script>
+		$(".a1").click(function()
+		{
+		$(".a2").slideDown(800);
+		$(".a4").hide();
+		$(".a6").hide();
+		$(".a8").hide();
+		})
+		$(".a3").click(function()
+		{
+		$(".a4").slideDown(800);
+		$(".a6").hide();
+		$(".a8").hide();
+		$(".a2").hide();
+		})
+		$(".a5").click(function()
+		{
+		$(".a6").slideDown(800);
+		$(".a4").hide();
+		$(".a2").hide();
+		$(".a8").hide();
+		})
+		$(".a7").click(function()
+		{
+		$(".a8").slideDown(800);
+		$(".a4").hide();
+		$(".a6").hide();
+		$(".a2").hide();
+		})
+	</script>
+</body>
+</html>

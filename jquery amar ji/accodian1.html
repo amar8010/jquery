@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		.a1,.a3,.a5,.a7{
+			width:400px;
+			height:50px;
+			background-color:aliceblue;
+			border:1px solid black;
+		}
+		.a2{
+			width:400px;
+			height:100px;
+			background-color:beige;
+		}
+		.a4,.a6,.a8{
+			width:400px;
+			height:100px;
+			background-color:beige;
+			display:none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="a1"></div>
+	<div class="a2"></div>
+	<div class="a3"></div>
+	<div class="a4"></div>
+	<div class="a5"></div>
+	<div class="a6"></div>
+	<div class="a7"></div>
+	<div class="a8"></div>
+<script>
+	$(".a1").click(function()
+	{
+		$(".a2").slideDown(1500);
+		$(".a4").hide();
+		$(".a6").hide();
+		$(".a8").hide();
+	});
+	$(".a3").click(function()
+	{
+		$(".a4").slideDown(1500);
+		$(".a6").hide();
+		$(".a8").hide();
+		$(".a2").hide();
+	});
+	$(".a5").click(function()
+	{
+		$(".a6").slideDown(1500);
+		$(".a8").hide();
+		$(".a2").hide();
+		$(".a4").hide();
+	});
+	$(".a7").click(function()
+	{
+		$(".a8").slideDown(1500);
+		$(".a2").hide();
+		$(".a4").hide();
+		$(".a6").hide();
+	});
+	</script>
+</body>
+</html>
