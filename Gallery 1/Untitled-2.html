@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<script src="jquery-3.4.1.min.js"></script>
+<link href="style1.css" rel="stylesheet">
+<body>
+	<div class="a1"></div>
+	<div class="b1"></div>
+	<div class="c1"></div>
+	<div class="d1"></div>
+	<div class="button"></div>
+	<div class="a2"></div>
+	
+	
+	<div class="b2"></div>
+	
+	<div class="c2"></div>
+	
+	<div class="d2"></div>
+</body>
+	<script>
+		$(".a1").click(function()
+					   {
+		
+		$(".b1").css("opacity",".2");
+		$(".c1").css("opacity",".2");
+		$(".d1").css("opacity",".2");
+		$(".a1").css("opacity",".2");
+			$(".b2").css("opacity","0");
+		$(".c2").css("opacity","0");
+		$(".d2").css("opacity","0");
+		
+			
+$(".a2").animate({opacity:"1",width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+		
+		$(".button").click(function()
+					   {
+				$(".b1").css("opacity","1");
+		$(".c1").css("opacity","1");
+		$(".d1").css("opacity","1");
+		$(".a1").css("opacity","1");
+				$(".a2").css({"opacity":"0","width":"200px","height":"200px","left":"600px","top":"200px"});
+			$(".b2").css({"opacity":"0","width":"200px","height":"200px","left":"600px","top":"200px"});
+		$(".c2").css({"opacity":"0","width":"200px","height":"200px","left":"600px","top":"200px"});
+		$(".d2").css({"opacity":"0","width":"200px","height":"200px","left":"600px","top":"200px"});	
+		});
+		
+		$(".b1").click(function()
+					   {
+		$(".b1").css("opacity",".2");
+		$(".c1").css("opacity",".2");
+		$(".d1").css("opacity",".2");
+		$(".a1").css("opacity",".2");
+			$(".a2").css("opacity","0");
+		$(".c2").css("opacity","0");
+		$(".d2").css("opacity","0");
+		
+			
+$(".b2").animate({opacity:"1",width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+		$(".c1").click(function()
+					   {
+		$(".b1").css("opacity",".2");
+		$(".c1").css("opacity",".2");
+		$(".d1").css("opacity",".2");
+		$(".a1").css("opacity",".2");
+			$(".b2").css("opacity","0");
+		$(".a2").css("opacity","0");
+		$(".d2").css("opacity","0");
+		
+			
+$(".c2").animate({opacity:"1",width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+		$(".d1").click(function()
+					   {
+		$(".b1").css("opacity",".2");
+		$(".c1").css("opacity",".2");
+		$(".d1").css("opacity",".2");
+		$(".a1").css("opacity",".2");
+			$(".b2").css("opacity","0");
+		$(".c2").css("opacity","0");
+		$(".a2").css("opacity","0");
+		
+			
+$(".d2").animate({opacity:"1",width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+	</script>
+</html>

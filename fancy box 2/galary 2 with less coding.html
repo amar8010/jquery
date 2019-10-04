@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	 $("#div4").hide();
+    $("#div5").hide();
+	 $("#div6").hide();
+    $("#div7").hide();
+ 
+});
+$(document).ready(function(){
+  $("#div4").click(function(){
+    $("#div1").show();
+    $("#div2").show();
+    $("#div3").show();
+	 $("#div4").hide();
+    $("#div5").hide();
+	 $("#div6").hide();
+    $("#div7").hide();
+	$("#div1").css("opacity",1.0);
+	$("#div2").css("opacity",1.0);
+	$("#div3").css("opacity",1.0);
+  });
+});
+$(document).ready(function(){
+  $("#div1").click(function(){
+    $("#div1").fadeTo("slow",0.15);
+    $("#div2").fadeTo("slow",0.15);
+    $("#div3").fadeTo("slow",0.15);
+	 $("#div4").show();
+    $("#div5").show();
+  });
+});
+$(document).ready(function(){
+  $("#div2").click(function(){
+    $("#div1").fadeTo("slow",0.15);
+    $("#div2").fadeTo("slow",0.15);
+    $("#div3").fadeTo("slow",0.15);
+	 $("#div4").show();
+    $("#div6").show();
+  });
+});
+$(document).ready(function(){
+  $("#div3").click(function(){
+    $("#div1").fadeTo("slow",0.15);
+    $("#div2").fadeTo("slow",0.15);
+    $("#div3").fadeTo("slow",0.15);
+	 $("#div4").show();
+    $("#div7").show();
+  });
+});
+</script>
+<style type="text/css">
+#div3 {
+	height: 150px;
+	width: 200px;
+}
+#div1 {
+	height: 150px;
+	width: 200px;
+}
+#div2 {
+	height: 150px;
+	width: 200px;
+}
+#div4 {
+	height: 600px;
+	width: auto;
+	opacity: .4;
+	background-color: #000;
+	position: relative;
+	z-index: 10;
+	top: -490px;
+}
+#div5 {
+	height: 600px;
+	width: 800px;
+	position: relative;
+	z-index: 11;
+	top: -1090px;
+	margin:0 auto;
+}
+#div6 {
+	height: 600px;
+	width: 800px;
+	position: relative;
+	z-index: 15;
+	top: -1090px;
+	margin:0 auto;
+	display:none;
+}
+#div7 {
+	height: 600px;
+	width: 800px;
+	position: relative;
+	z-index: 20;
+	top: -1090px;
+	margin:0 auto;
+	display:none;
+}
+</style>
+</head>
+
+<body>
+<div id="div1"><img src="image4.jpg" width="200" height="150"></div><br>
+<div id="div2"><img src="image5.jpg" width="200" height="150"></div><br>
+<div id="div3"><img src="image6.jpg" width="200" height="150"></div>
+<div id="div4"></div>
+<div id="div5"><img src="image1.JPG" width="800" height="600"></div>
+<div id="div6"><img src="image2.JPG" width="800" height="600"></div>
+<div id="div7"><img src="image3.JPG" width="800" height="600"></div>
+</body>
+</html>

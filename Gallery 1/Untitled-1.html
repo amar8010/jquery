@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<script src="jquery-3.4.1.min.js"></script>
+<link href="style.css" rel="stylesheet">
+<body>
+	<div class="a1"></div>
+	<div class="a2"></div>
+		<div class="button"></div>
+	<div class="b1"></div>
+	<div class="b2"></div>
+	<div class="c1"></div>
+	<div class="c2"></div>
+	<div class="d1"></div>
+	<div class="d2"></div>
+</body>
+	<script>
+		$(".a1").click(function()
+					   {
+		$(".a2").show();
+		$(".b1").hide();
+		$(".c1").hide();
+		$(".d1").hide();
+		$(".a1").hide();
+$(".a2").animate({width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+		
+		$(".button").click(function()
+					   {
+				$(".b1").show();
+				$(".c1").show();
+				$(".d1").show();
+				$(".a1").show();
+				$(".a2").hide();
+				$(".b2").hide();
+				$(".c2").hide();
+				$(".d2").hide();	
+		});
+		
+		$(".b1").click(function()
+					   {
+		$(".b2").show();
+		$(".b1").show();
+		$(".a1").hide();
+		$(".c1").hide();
+		$(".d1").hide();
+		
+$(".b2").animate({width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+		$(".c1").click(function()
+					   {
+		$(".c2").show();
+		$(".c1").show();
+		$(".a1").hide();
+		$(".b1").hide();
+		$(".d1").hide();
+$(".c2").animate({width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+		$(".d1").click(function()
+					   {
+		$(".d2").show();
+		$(".d1").show();
+		$(".a1").hide();
+		$(".b1").hide();
+		$(".c1").hide();
+$(".d2").animate({width:"600px",height:"400px",left:"450px",top:"100px"},1000);
+		});
+	</script>
+</html>

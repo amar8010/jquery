@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+.a1,.b1,.c1,.d1{
+	width:150px;
+	height:150px;
+	background-image: url("1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float:left;
+	margin-right:20px;
+}
+.b1{
+	background-image: url("2.jpg");
+}
+.c1{
+	background-image: url("3.jpg");
+}
+.d1{
+	background-image: url("4.jpg");
+}
+.a2{
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:200px;
+	left:600px;
+	opacity:0;
+	background-image: url("1.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.button{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background-color:aqua;
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+.b2{
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:200px;
+	left:600px;
+	opacity:0;
+	background-image: url("2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.c2{
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:200px;
+	left:600px;
+	opacity:0;
+	background-image: url("3.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+.d2{
+	width:200px;
+	height:200px;
+	position: absolute;
+	top:200px;
+	left:600px;
+	opacity:0;
+	background-image: url("4.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
