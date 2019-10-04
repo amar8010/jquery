@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		.main{background-color:red;
+		width:200px;
+		height:200px;
+		position:relative;}
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="main">
+	
+		</div>
+	<input type="button" class="s1" value="left"><input type="button" class="s2" value="right">
+	<script>
+		$(".s1").click(function()
+					   {
+			
+			$(".main").animate({left: "+=30px"});
+			
+		
+		});
+		$(".s2").click(function()
+					   {
+			
+			$(".main").animate({left: "-=30px"});
+			
+		
+		});
+	</script>
+</body>
+	<!--  
+$().();
+-->
+</html>

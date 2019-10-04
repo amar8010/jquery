@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		.main{position:relative;
+		width:1008px;
+		height:52px;}
+		.s1{
+			width:250px;
+			height:50px;
+			float:left;
+			color:white;
+			background:red;
+			text-align:center;
+			line-height:50px;
+			border:1px solid black;
+		}
+		.a1{
+			width:1008px;
+			height:200px;
+			background-color:green;
+			top:52px;
+			left:0;
+			position:absolute;
+		}
+		.a2{
+			width:1008px;
+			height:200px;
+			background-color:blue;
+			top:52px;
+			left:0;
+			position:absolute;
+			display:none;
+		}
+		.a3{
+			width:1008px;
+			height:200px;
+			background-color:brown;
+			top:52px;
+			left:0;
+			position:absolute;
+			display:none;
+		}
+		.a4{
+			width:1008px;
+			height:200px;
+			background-color:yellow;
+			top:52px;
+			left:0;
+			position:absolute;
+			display:none;
+		}
+		.bb{
+			background-color:purple;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+	<div class="s1 c1">Home</div>
+	<div class="s1 c2">About</div>
+	<div class="s1 c3">Contact</div>
+	<div class="s1 c4">Services</div>
+		<div class="a1"></div>
+		<div class="a2"></div>
+		<div class="a3"></div>
+		<div class="a4"></div>
+		</div>
+	
+	<script>
+		$(".s1:eq(0)").click(function()
+					   {
+			$(".a1").fadeIn(1000);
+			$(".a2").hide();
+			$(".a3").hide();
+			$(".a4").hide();
+			$(".c1").css("background-color","purple");
+			$(".c2").css("background-color","red");
+			$(".c3").css("background-color","red");
+			$(".c4").css("background-color","red");
+		
+		});
+		$(".s1:eq(1)").click(function()
+					   {
+			$(".a2").fadeIn(1000);
+			$(".a1").hide();
+			$(".a3").hide();
+			$(".a4").hide();
+			$(".c2").css("background-color","purple");
+			$(".c1").css("background-color","red");
+			$(".c3").css("background-color","red");
+			$(".c4").css("background-color","red");
+		});
+		$(".s1:eq(2)").click(function()
+					   {
+			$(".a3").fadeIn(1000);
+			$(".a2").hide();
+			$(".a1").hide();
+			$(".a4").hide();
+			$(".c3").css("background-color","purple");
+			$(".c1").css("background-color","red");
+			$(".c2").css("background-color","red");
+			$(".c4").css("background-color","red");
+		});
+		$(".s1:eq(3)").click(function()
+					   {
+			$(".a4").fadeIn(1000);
+			$(".a2").hide();
+			$(".a3").hide();
+			$(".a1").hide();
+			$(".c4").css("background-color","purple");
+			$(".c1").css("background-color","red");
+			$(".c2").css("background-color","red");
+			$(".c3").css("background-color","red");
+		});
+	</script>
+</body>
+	<!--  
+$().();
+-->
+</html>

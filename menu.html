@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+
+.s2{width:250px;
+height:50px;
+float:left;
+	background-color:red;
+	border:1px solid black;
+	position:relative;
+}
+	.g1{
+		
+		width:1008px;
+		height:52px;
+	}
+	.c1{
+		position:absolute;
+		top:52px;
+		left:0;
+		width:252px;
+		height:300px;
+		background: green;
+		display:none;
+	}
+	.f1{
+		position:absolute;
+		left:252px;
+		top:0px;
+		width:252px;
+		height:300px;
+		background: yellow;
+		display:none;
+	}
+</style>
+<script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<div class="g1">
+
+<div class="s2 d1">h1
+		<div class="c1">
+	<div class="f1"></div>
+	</div>
+		</div>
+<div class="s2">h2
+		
+		</div>
+<div class="s2">h3
+	
+		</div>
+<div class="s2">h4
+		
+		</div>
+
+</div>
+<script>
+
+
+	$(".s2").click(function()
+{
+		$(".c1").slideDown(1000);
+		
+	});
+	
+$(".c1").click(function()
+{
+		$(".f1").slideDown(1000);
+		
+	});
+</script>
+</body>
+</html>

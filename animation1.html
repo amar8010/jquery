@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			background-color:red;
+			position:relative;
+		}
+		/**#ss,#ss1,#ss2,#ss3{
+			position:absolute;
+		}**/
+	</style>
+</head>
+
+<body>
+	
+	<div class="s1"></div>
+	<input type="button" value="right" id="ss">
+	<input type="button" value="left" id="ss1">
+	<input type="button" value="top" id="ss2">
+	<input type="button" value="bottom" id="ss3">
+	<script>
+		$("#ss").click(function()
+					   {
+			$(".s1").animate({left: "+=100px"})
+		});
+		$("#ss1").click(function()
+					   {
+			$(".s1").animate({left: "-=100px"})
+		});
+		$("#ss2").click(function()
+					   {
+			$(".s1").animate({top: "-=100px"})
+		});
+		$("#ss3").click(function()
+					   {
+			$(".s1").animate({top: "+=100px"})
+		});
+	</script>
+</body>
+	<!--  
+$().();
+-->
+</html>

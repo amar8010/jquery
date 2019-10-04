@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Move DIV Element with Arrow Keys</title>
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<script src="jquery-3.4.1.min.js"></script>
+<style>
+	body{
+		margin:0;
+		padding:0;
+	}
+	.s1{width:100%;
+		height:50px;
+	}
+	.d1{width:100%;
+		height:50px;
+		float:left;
+		display:block;
+		background-color:red;
+	}
+	.d2{width:100%;
+		height:50px;
+		float:left;
+		display:none;
+		background-color:green;
+		position:relative;
+	}
+	.a1{
+		width:calc( 25% - 2px);
+		height:48px;
+		background-color:blue;
+		float:left;
+		border:1px solid black;
+	}
+	.bb{
+		width:100%;
+		height:204px;
+		position:absolute;
+		top:50px;
+		left:0;
+		display:none;
+	}
+	.b1{
+		width:100%;
+		height:50px;
+		margin-bottom:1px;
+		background-color:pink;
+	}
+	.c1{
+		width:40px;
+		height:40px;
+		margin-left:20px;
+		margin-top:5px;
+		background-color:red;
+	}
+	@media (max-width:769px)
+	{
+		.d1{
+		display:none;
+		
+	}
+	.d2{
+		display:block;
+		
+	}
+	}
+</style>
+
+</head>
+<body>
+   <div class="s1">
+	<div class="d1">
+	   
+	   <div class="a1">Home</div>
+		<div class="a1">Contact</div>
+		<div class="a1">About</div>
+		<div class="a1">Blog</div>
+	   </div>
+	 <div class="d2">
+		 <div class="c1"></div>
+		 <div class="bb">
+	   <div class="b1">Home</div>
+		<div class="b1">Contact</div>
+		<div class="b1">About</div>
+		<div class="b1">Blog</div>
+	   </div>
+	   </div>
+	</div>
+<script>
+	$(".c1").click(function()
+				  {
+		$(".bb").slideToggle(1000);
+	});
+	</script>
+</body>
+</html>

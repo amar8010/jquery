@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			background-color:red;
+			position:relative;
+			left:200px;
+			top:100px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	<div class="s1"></div>
+
+	<script>
+		
+			$(".s1").hover(function()
+					   {
+			$(".s1").animate({width: "400px",height:"400px",left:"100px",top:"0"},2000);
+			
+			
+				});
+			
+			
+		
+		
+	</script>
+</body>
+	<!--  
+$().();
+-->
+</html>

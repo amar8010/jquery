@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.s1{width:100px;
+height:100px;
+position:relative;
+overflow:hidden;
+}
+.d1{width:600px;
+height:100px;
+position:absolute;
+}
+.s2{width:100px;
+height:100px;
+float:left;
+}
+</style>
+<script src="jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+<div class="s1">
+<div class="d1">
+<div class="s2"><img src="image1.jpg"></div>
+<div class="s2"><img src="image2.jpg"></div>
+<div class="s2"><img src="image3.jpg"></div>
+<div class="s2"><img src="image4.jpg"></div>
+<div class="s2"><img src="image5.jpg"></div>
+<div class="s2"><img src="image1.jpg"></div>
+</div>
+</div>
+<input type="button" value="left" class="b1">
+<input type="button" value="right" class="b2">
+<script>
+temp=1;
+$(document).ready(function(){
+	setInterval(sanjay, 2000);
+	$(".b1").click(function()
+{
+	if(temp<6)
+	{
+	$(".d1").animate({left:"-=100px"});
+	temp++;
+	}
+	else
+	{
+		$(".d1").animate({left:"0px"},0);
+		$(".d1").animate({left:"-=100px"});
+		temp=2;
+	}
+	
+});
+$(".b2").click(function()
+{
+	
+	if(temp>1)
+	{
+	$(".d1").animate({left:"+=100px"});
+	temp--;
+	}
+	else
+	{
+		$(".d1").animate({left:"-500px"},0);
+		$(".d1").animate({left:"+=100px"});
+		temp=5;
+	}
+	
+	
+});
+	});
+	function sanjay(){
+
+	if(temp<6)
+	{
+	$(".d1").animate({left:"-=100px"});
+	temp++;
+	}
+	else
+	{
+		$(".d1").animate({left:"0px"},0);
+		$(".d1").animate({left:"-=100px"});
+		temp=2;
+	}
+	}
+</script>
+</body>
+</html>
