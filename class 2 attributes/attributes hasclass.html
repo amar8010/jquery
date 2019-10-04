@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+
+     alert("First para returns: " +
+               $("p#pid1").hasClass("red") );
+     alert("Second para returns: " + 
+               $("p#pid2").hasClass("red") );
+
+   });
+
+</script>
+<style>
+  .red { color:red; }
+  .green { color:green; }
+</style>
+
+</head>
+<body>
+
+<p class="red" id="pid1">This is first paragraph.</p>
+<p class="green" id="pid2">This is second paragraph.</p>
+
+</body>
+</html>

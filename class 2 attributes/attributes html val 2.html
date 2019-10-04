@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+      var content = $("p").html();
+      $("p#pid2").html( content );
+   });
+
+</script>
+<style>
+  .red { color:red; }
+  .green { color:green; }
+</style>
+
+</head>
+<body>
+
+<p class="green" id="pid1">This is first paragraph.</p>
+<p class="red" id="pid2">This is first paragraph.</p>
+
+</body>
+</html>

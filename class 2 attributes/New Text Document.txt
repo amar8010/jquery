@@ -1,0 +1,35 @@
+Similar to above syntax and examples, following examples would give you understanding on using various attribute methods in different situation:
+
+$("#myID").attr("custom") : This would return value of attribute custom for the first element matching with ID myID.
+
+$("img").attr("alt", "Sample Image"): This sets the alt attribute of all the images to a new value "Sample Image".
+
+$("input").attr({ value: "", title: "Please enter a value" }); : Sets the value of all <input> elements to the empty string, as well as sets the title to the string Please enter a value.
+
+$("a[href^=http://]").attr("target","_blank"): Selects all links with an href attribute starting with http:// and set its target attribute to _blank
+
+$("a").removeAttr("target") : This would remove target attribute of all the links.
+
+$("form").submit(function() {$(":submit",this).attr("disabled", "disabled");}); : This would modify the disabled attribute to the value "disabled" while clicking Submit button.
+
+$("p:last").hasClass("selected"): This return true if last <p> tag has associated classselected.
+
+$("p").text(): Returns string that contains the combined text contents of all matched <p> elements.
+
+$("p").text("<i>Hello World</i>"): This would set "<I>Hello World</I>" as text content of the matching <p> elements
+
+$("p").html() : This returns the HTML content of the all matching paragraphs.
+
+$("div").html("Hello World") : This would set the HTML content of all matching <div> to Hello World.
+
+$("input:checkbox:checked").val() : Get the first value from a checked checkbox
+
+$("input:radio[name=bar]:checked").val(): Get the first value from a set of radio buttons
+
+$("button").val("Hello") : Sets the value attribute of every matched element <button>.
+
+$("input").val("on") : This would check all the radio or check box button whose value is "on".
+
+$("select").val("Orange") : This would select Orange option in a dropdown box with options Orange, Mango and Banana.
+
+$("select").val("Orange", "Mango") : This would select Orange and Mango options in a dropdown box with options Orange, Mango and Banana.

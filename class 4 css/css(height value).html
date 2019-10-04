@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+ <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+
+     $("div").click(function () {
+      var color = $(this).css("background-color");
+      var height = $(this).height();
+      $("#result").html("That div is <span>" +color+ "</span>.");
+      $("#result").css({'color': color, 'background-color':'gray'});
+      $("#result").height( height );
+    });
+
+   });
+
+   </script>
+   <style>
+      div { width:60px; height:60px; margin:5px; float:left; }
+  </style>
+</head>
+<body>
+   <p>Click on any square:</p>
+   <span id="result"> </span>
+   <div style="background-color:blue; height:50px;"></div>
+   <div style="background-color:pink;height:30px;"></div>
+   <div style="background-color:#123456;height:100px;"></div>
+   <div style="background-color:#f11; height:75px;"></div>
+</body>
+</html>

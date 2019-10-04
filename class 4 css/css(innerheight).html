@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+ <script type="text/javascript" language="javascript">
+   
+   $(document).ready(function() {
+
+     $("div").click(function () {
+      var color = $(this).css("background-color");
+      var height = $(this).innerHeight();
+      $("#result").html("Inner Height is <span>" + 
+                         height + "</span>.");
+      $("#result").css({'color': color, 
+                        'background-color':'gray'});
+      $("#result").height( height );
+    });
+
+   });
+
+   </script>
+   <style>
+      #div1{ margin:10px;padding:12px;
+             border:2px solid #666; 
+             width:60px;}
+      #div2 { margin:15px;padding:5px;
+              border:5px solid #666; 
+              width:60px;}
+      #div3 { margin:20px;padding:4px;
+              border:4px solid #666; 
+              width:60px;}
+      #div4 { margin:5px;padding:3px;
+              border:3px solid #666; 
+              width:60px;}
+  </style>
+</head>
+<body>
+   <p>Click on any square:</p>
+   <span id="result"> </span>
+   <div id="div1" style="background-color:blue;"></div>
+   <div id="div2" style="background-color:pink;"></div>
+   <div id="div3" style="background-color:#123456;"></div>
+   <div id="div4" style="background-color:#f11;"></div>
+</body>
+</html>

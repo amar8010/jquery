@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+      var title = $("em").attr("title");
+      $("#divid").text(title);
+   });
+
+   </script>
+</head>
+<body>
+   <div>
+      <em title="Bold and Brave">This is first paragraph.</em>
+      <p id="myid">This is second paragraph.</p>
+      <div id="divid"></div>
+   </div>
+</body>
+</html>
