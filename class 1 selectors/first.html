@@ -1,0 +1,37 @@
+
+
+<html>
+<head>
+<title>The Selecter Example</title>
+<script type="text/javascript" src="jquery-1.10.2.js">
+</script>
+   
+<script type="text/javascript" language="javascript">
+
+   $(document).ready(function() {
+      var divs = $("body");
+      alert("Found Division: " + divs[0].innerHTML);
+   });
+
+</script>
+</head>
+<body>
+
+<div class="div1" id="divid1">
+  <p class="para1" id="pid1">This is first paragraph.</p>
+  <p class="para1" id="pid2">This is second paragraph.</p>
+  <p class="para1" id="pid3">This is third paragraph.</p>
+</div>
+<br />
+
+<div class="div2" id="divid2">
+  <p>This is second division of the DOM.</p>
+</div>
+<br />
+
+<div class="div3" id="divid3">
+  <p>This is a para inside third division</p>
+</div>
+
+</body>
+</html>

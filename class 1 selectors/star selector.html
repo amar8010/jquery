@@ -1,0 +1,39 @@
+
+<html>
+<head>
+<title>The Selecter Example</title>
+<script type="text/javascript" src="jquery-1.10.2.js">
+</script>
+   
+<script type="text/javascript" language="javascript">
+
+  $(document).ready(function() {
+      var elements = $("*");
+      for( i=0; i<elements.length; i++ ){
+         alert("Found element: " + elements[i].innerHTML);
+      }
+   });
+
+</script>
+</head>
+<body>
+
+<div class="big" id="divid1">
+  <p class="para1" id="pid1">This is first paragraph.</p>
+  <p class="para2" id="pid2">This is second paragraph.</p>
+  <p class="para3" id="pid3">This is third paragraph.</p>
+</div>
+<br />
+
+<div class="big" id="divid2">
+  <p>This is second division of the DOM.</p>
+  <p>This is second para inside second division.</p>
+</div>
+<br />
+
+<div class="medium" id="divid3">
+  <p>This is a para inside third division</p>
+</div>
+
+</body>
+</html>
