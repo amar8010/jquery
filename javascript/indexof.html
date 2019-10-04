@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="a1">
+<input type="button" onClick="showmesaage()" value="calc">
+<p id="sanjay"></p>
+<script>
+function showmesaage()
+{
+	val=document.getElementById("a1").value;
+	val1=val.indexOf("@");
+	if(val1==-1)
+	{
+	document.getElementById("sanjay").innerHTML="please enter @ ";
+	}
+	else{
+		document.getElementById("sanjay").innerHTML="correct";
+	}
+}
+</script>
+</body>
+</html>

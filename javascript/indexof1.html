@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="a1">
+<input type="button" onClick="showmesaage()" value="calc">
+<p id="ss"></p>
+<script>
+function showmesaage()
+{
+	val=document.getElementById("a1").value;
+	val1=val.indexOf("@");
+	
+	document.getElementById("ss").innerHTML=val1;
+	
+}
+</script>
+</body>
+</html>

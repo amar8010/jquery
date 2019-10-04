@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta http-equiv="refresh" content="1">
+</head>
+
+<body onload="ss()">
+<div id="main"></div>
+
+<script>
+function ss()
+{
+	a=new Date();
+	c=a.getMinutes();
+	b=a.getSeconds();
+	d=a.getHours();
+	if(d>12)
+	{
+		d=d-12;
+		e="PM";
+	}
+	else
+	{
+		e="AM"
+	}
+	document.getElementById("main").innerHTML=d+" - "+c+" - "+b+" "+e;
+	
+}
+</script>
+</body>
+</html>

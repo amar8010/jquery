@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="a1">
+<input type="button" onClick="showmesaage()" value="calc">
+<p id="ss"></p>
+<script>
+function showmesaage()
+{
+	val=document.getElementById("a1").value;
+	val1=val.indexOf("@");
+	val2=val.indexOf(".");
+	val3=val.length;
+	diff=val2-val1;
+	diff1=val3-val2;
+	if(val=="")
+	{
+	document.getElementById("ss").innerHTML="please enter a value";
+	}
+	else if(val1==-1)
+	{
+		document.getElementById("ss").innerHTML="please enter @";
+	}
+	else if(val2==-1)
+	{
+		document.getElementById("ss").innerHTML="please enter dot";
+	}
+	else if(val3<8)
+	{
+		document.getElementById("ss").innerHTML="please enter min 8 characters";
+	}
+	else if(diff<=3)
+	{
+		document.getElementById("ss").innerHTML="please enter min 3 characters bteween dot and @";
+	}
+	else if(val1<3)
+	{
+		document.getElementById("ss").innerHTML="please enter min 3 characters before @";
+	}
+	else if(diff1<=3)
+	{
+		document.getElementById("ss").innerHTML="please enter min 3 characters before .";
+	}
+	else{document.getElementById("ss").innerHTML="";
+	}
+	
+}
+</script>
+</body>
+</html>

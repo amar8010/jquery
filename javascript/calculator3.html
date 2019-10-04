@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="s1"><br>
+
+<input type="button" value="1" onclick="a1()">
+<input type="button" value="2" onclick="a2()">
+<input type="button" value="3" onclick="a3()">
+<input type="button" value="4" onclick="a4()">
+<input type="button" value="5" onclick="a5()">
+<input type="button" value="6" onclick="a6()"><br>
+<input type="button" value="7" onclick="a7()">
+<input type="button" value="8" onclick="a8()">
+<input type="button" value="9" onclick="a9()">
+<input type="button" value="0" onclick="a0()">
+<input type="button" value="+" onclick="add()">
+<input type="button" value="-" onclick="subt()"><br>
+<input type="button" value="*" onclick="mul()">
+<input type="button" value="/" onclick="dev()">
+<input type="button" value="%" onclick="per()">
+<input type="button" value="c" onclick="cle()">
+<input type="button" value="=" onclick="calc()">
+
+<script>
+function a1()
+{document.getElementById("s1").value+="1";
+}
+function a2()
+{document.getElementById("s1").value+="2";
+}
+function a3()
+{document.getElementById("s1").value+="3";
+}
+function a4()
+{document.getElementById("s1").value+="4";
+}
+function a5()
+{document.getElementById("s1").value+="5";
+}
+function a6()
+{document.getElementById("s1").value+="6";
+}
+function a7()
+{document.getElementById("s1").value+="7";
+}function a8()
+{document.getElementById("s1").value+="8";
+}function a9()
+{document.getElementById("s1").value+="9";
+}
+function a0()
+{document.getElementById("s1").value+="0";
+}
+function add()
+{document.getElementById("s1").value+="+";
+}
+function subt()
+{document.getElementById("s1").value+="-";
+}
+function mul()
+{document.getElementById("s1").value+="*";
+}
+function dev()
+{document.getElementById("s1").value+="/";
+}
+function per()
+{document.getElementById("s1").value+="%";
+}
+function cle()
+{document.getElementById("s1").value="";
+}
+function calc()
+{a=document.getElementById("s1").value;
+	document.getElementById("s1").value=eval(a);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="main"></div>
+<input type="button" onclick="ss()" value="click">
+<script>
+function ss()
+{
+	a=new Date();
+	c=a.getMinutes();
+	b=a.getSeconds();
+	d=a.getHours();
+	document.getElementById("main").innerHTML=d+" - "+c+" - "+b;
+	
+}
+</script>
+</body>
+</html>
