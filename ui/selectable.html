@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link href="js/jquery-ui.min.css" rel="stylesheet">
+	<style>
+		#sanjay .ui-selecting { background: #cdc8b1 ; }  
+         #sanjay .ui-selected { background: #006400; color: #ffffff; }  
+         #sanjay {  margin: 0;   
+            padding: 0; width: 20%; }  
+         #sanjay li { margin: 3px; padding: 0.4em;   
+            font-size: 16px; height: 18px;
+			 background: #00ced1;  
+            border: 1px solid #DDDDDD;  
+            color: #8b0a50;list-style-type: none;  
+		}  
+          
+	</style>
+</head>
+
+<body>
+	<ol id="sanjay">  
+         <li class="s1">Item 1</li>  
+         <li class="s1">Item 2</li>  
+         <li class="s1">Item 3</li>  
+         <li class="s1">Item 4</li>  
+         <li class="s1">Item 5</li>  
+         <li class="s1">Item 6</li>  
+         <li class="s1">Item 7</li>  
+      </ol> 
+	
+	<script>
+	  	
+   
+  $( "#sanjay" ).selectable();  
+	</script>
+</body>
+</html>

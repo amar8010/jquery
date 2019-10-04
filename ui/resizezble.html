@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link href="js/jquery-ui.min.css" rel="stylesheet">
+	<style>
+		 .s1 {  
+            background:lightyellow;  
+            border: 1px solid #b9cd6d;  
+            color: Red;  
+            font-weight: bold;  
+         }  
+         .s2 {  
+            background: lightgreen;  
+            border: 1px solid #DDDDDD;  
+            color: Red;  
+         }  
+         #resizable { width: 150px; height: 150px; padding: 0.5em;  
+            text-align: center; margin: 0; }  
+	</style>
+</head>
+
+<body>
+	 
+	<div id="resizable" class="s1">   
+         <h3 class="s2">Pull my edges to resize me!!</h3>  
+      </div>  
+	<script>
+		
+   
+  $( "#resizable" ).resizable(); 
+	</script>
+</body>
+</html>

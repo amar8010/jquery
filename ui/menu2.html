@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link href="js/jquery-ui.min.css" rel="stylesheet">
+	<style>
+		.ui-menu{
+			width:200px;
+		}
+		li{
+			width:198px;
+			height:50px;
+			border:1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<ul id="ss">
+	<li>home</li>
+		<li>home1
+		    <ul>
+			<li>h1</li>
+				<li>h2</li>
+				<li>h3</li>
+				<li>h4</li>
+			</ul>
+		</li>
+		<li>home2</li>
+		<li>home3</li>
+	</ul>
+	 
+	
+	<script>
+		
+   $("#ss").menu();
+  
+	</script>
+</body>
+</html>
